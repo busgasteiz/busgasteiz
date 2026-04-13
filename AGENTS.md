@@ -11,6 +11,10 @@ Aplicación móvil para visualizar la información en tiempo real de los autobus
 | `docs`         | Sí                | Directorio para documentación y diagramas                    |
 | `temp`         | No                | Directorio para pruebas y ficheros temporales                |
 
+No está permitido generar y modificar ficheros fuera de los directorios clave.
+
+Solo está permitido crear commits en los directorios clave versionados.
+
 ## Formatos y tecnologías a utilizar
 
 - Diagramas: PlantUML
