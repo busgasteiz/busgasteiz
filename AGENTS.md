@@ -20,3 +20,4 @@ Solo está permitido crear commits en los directorios clave versionados.
 - Diagramas: PlantUML
 - Documentación general: Markdown
 - Scripting genérico: Bash
+- Utilidades para procesado de datos durante el desarrollo: Python
