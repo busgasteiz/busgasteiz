@@ -2,18 +2,24 @@
 
 Aplicación móvil para visualizar la información en tiempo real de los autobuses urbanos de Vitoria-Gasteiz.
 
-## Directorios clave
+## Estructura del repositorio
 
-| Directorio     | Versionado en Git | Propósito                                                    |
-|----------------|-------------------|--------------------------------------------------------------|
-| `ios`          | Sí                | Código fuente de la aplicación para iOS                      |
-| `pruebas-gtfs` | Sí                | Prueba de concepto de procesado de información GTFS en Swift |
-| `docs`         | Sí                | Directorio para documentación y diagramas                    |
-| `temp`         | No                | Directorio para pruebas y ficheros temporales                |
+Este repositorio raíz es intencionalmente casi vacío: solo contiene el `README.md` y este `AGENTS.md`. **Todo el contenido está ignorado a propósito** mediante `.gitignore`.
 
-No está permitido generar y modificar ficheros fuera de los directorios clave.
+El trabajo real se encuentra en subdirectorios, cada uno de los cuales es un **repositorio Git independiente**. Esta es una decisión de diseño del proyecto.
 
-Solo está permitido crear commits en los directorios clave versionados.
+| Subdirectorio  | Repositorio Git propio | Propósito                                                    |
+|----------------|------------------------|--------------------------------------------------------------|
+| `ios/`         | Sí                     | Código fuente de la aplicación para iOS                      |
+| `pruebas-gtfs/`| Sí                     | Prueba de concepto de procesado de información GTFS en Swift |
+| `docs/`        | Sí                     | Documentación y diagramas                                    |
+| `temp/`        | No                     | Directorio local para pruebas y ficheros temporales          |
+
+## Instrucciones para agentes
+
+- **No crear commits en este repositorio raíz** salvo para modificar `README.md` o `AGENTS.md`.
+- Para trabajar en el código, entrar en el subdirectorio correspondiente (`ios/`, `pruebas-gtfs/`, etc.) y operar sobre su repositorio Git propio.
+- No generar ni modificar ficheros fuera de los subdirectorios indicados.
 
 ## Formatos y tecnologías a utilizar
 
